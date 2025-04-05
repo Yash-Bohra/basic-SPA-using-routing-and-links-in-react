@@ -7,6 +7,7 @@ function App() {
     <Route path="page-1" element={<Page1/>}/>
     <Route path="page-2" element={<Page2/>}/>
     <Route path="/" element={<Home/>}/>
+    <Route path="*" element={<ErrorPage/>}/>}
   </Routes>
   </BrowserRouter>
   </div>
@@ -25,5 +26,10 @@ function Home(){
   return <div>
     this is the home page !
   </div>
+}
+function ErrorPage(){
+return <div>
+  Error page not found!--BAD REQUEST--
+  <div/>
 }
 export default App
